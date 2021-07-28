@@ -1,0 +1,8 @@
+name: DiscLink
+version: ${project.version}
+main: com.exortions.disclink.DiscLink
+api-version: 1.16
+prefix: DiscLink
+authors: [ Exortions ]
+description: A simple to use and easy to set up plugin that links a Discord Bot to your Minecraft server.
+website: exortions.com

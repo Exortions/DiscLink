@@ -1,0 +1,148 @@
+# ========================= #
+#         DISCLINK
+# ========================= #
+
+# Welcome to the config for DiscLink! Enjoy your stay :)
+
+# ========================= #
+#           BOT
+# ========================= #
+# The token for your bot. Can be found at discord.com/developers
+# after creating a new bot.
+bot-token: 'YOUR_BOT_TOKEN'
+
+# The type of status, can be either listening, watching or playing.
+bot-status-type: 'playing'
+# The status
+bot-status: 'DiscLink | Created by Exortions'
+# Result from the info above: Playing DiscLink | Created by Exortions.
+
+# The prefix for all commands for the bot.
+bot-prefix: '!'
+
+# ========================= #
+#         Features
+# ========================= #
+# If messages to the Minecraft chat
+# from discord are enabled.
+ratelimit: true
+# Minimum delay between messages,
+# in seconds.
+ratelimit-limit: 3
+# The title for the embed when a user is ratelimited.
+ratelimit-embed-title: 'Ratelimit'
+# The text for the embed when a user is ratelimited.
+ratelimit-embed-description: 'You are sending messages too fast! Please slow down and try again later.'
+
+# If player join and quits are logged.
+log-join-leave: true
+# The title for the embed when a
+# player joins your server.
+# Placeholders: %player% The
+# player's username (includes rank prefixes)
+join-embed-title: 'Player Joined'
+# The text for the embed when a
+# player joins your server.
+# Placeholders: %player% The
+# player's username (includes rank prefixes)
+join-embed-description: '%player%  has joined!'
+# The title for the embed when a
+# player leaves your server.
+# Placeholders: %player% The
+# player's username (includes rank prefixes)
+leave-embed-title: 'Player Quit'
+# The text for the embed when a
+# player leaves your server.
+# Placeholders: %player% The
+# player's username (includes rank prefixes)
+leave-embed-description: '%player% has quit!'
+
+# If chat messages from Minecraft
+# are sent into the discord server.
+log-chat-messages: true
+# The title for the embed when
+# a player chats in your server.
+# Placeholders: %player% The
+# player's username (includes rank prefixes)
+chat-embed-title: 'Player Chat'
+# The text for the embed when
+# a player chats in your server.
+# Placeholders: %player% The
+# player's username (includes rank prefixes)
+# %message%: What they sent
+chat-embed-description: '%player%: %message%'
+
+# If death messages from Minecraft
+# are sent into the discord server.
+log-player-death: true
+# The title for the embed
+# when a player dies in your server.
+# Placeholders: %player% The
+# player's username (includes rank prefixes)
+death-embed-title: 'Player Death'
+# The text for the embed
+# when a player dies in your server.
+# Placeholders: %message% The death message,
+# includes username.
+death-embed-description: '%message%'
+
+# If people on your discord can type
+# to everyone on Minecraft. (Uses & color codes)
+discord-to-minecraft-chat: true
+# Format for the message sent
+# to players on the server
+# when someone talks on discord.
+# Placeholders:
+# %discord_tag% The username and
+# tag of the sender, e.g. User#0000
+# %message% what was sent by the user.
+discord-to-minecraft-chat-format: '&9[Discord] %discord_tag%: %content%'
+
+# If commands can be dispatched
+# to the console by users with
+# a specific role in the server
+command-dispatching: true
+
+# ========================= #
+#         Server
+# ========================= #
+# Note: All of these can be found
+# by right clicking said object and
+# clicking 'Copy ID' when Discord
+# Developer mode is enabled (https://www.howtogeek.com/714348/how-to-enable-or-disable-developer-mode-on-discord/)
+
+# The ID for the server
+# you want to add the bot to. (Right click your server icon)
+server-id: 0
+# The ID for the channel
+# to send logs to.
+# Right click the channel
+# and click 'Copy ID'.
+log-channel-id: 0
+# The role that allows people to dispatch commands to the console.
+# Note: Only give this to EXTREMELY TRUSTED PEOPLE,
+# It will give them console access.
+# Right click the role and
+# click 'Copy ID'.
+command-sender-role-id: 0
+# The role that allows people to bypass
+# the ratelimit for sending messages.
+# This will allow them to spam the
+# Minecraft chat.
+# Right click the role and
+# click 'Copy ID'.
+ratelimit-bypass-role-id: 0
+
+# ========================= #
+#         Commands
+# ========================= #
+
+# If the listplayers
+# command is enabled.
+list-players-command: true
+# If the playersonline
+# command is enabled.
+online-players-command: true
+# If the help command
+# is enabled.
+help-command: true
